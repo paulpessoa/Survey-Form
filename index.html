@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <title>Survey Form</title>
+</head>
+<body class="bg-light">
+    <div class="container">
+    <main>   
+        
+        <div class="py-5 text-center">
+            <h1 id="title" class="py-5 text-center">Survey Form</h1>
+            <p id="description">Formulario para o desafio freecodecamp</p>
+        </div>
+
+        <div class="form-group form-control ">
+        <div class="row g-3">
+
+        
+        <form action="https://google.com" target="_blank" id="survey-form" class="needs-validation">
+            
+            <div class="col-12">
+                <label id="name-label" for="name" class="form-label">Name </label>
+                <input id="name" type="text" placeholder="First and last name" class="form-control" required>
+            </div>
+            
+            <div class="col-12">
+                <label id="email-label" for="email" class="form-label">E-mail</label>
+                <input id="email" type="email" placeholder="name@email.com" class="form-control" required>
+            </div>
+
+            <div class="col-12">
+                <label id="number-label" for="age" class="form-label">Age</label>
+                <input id="number" type="number" placeholder="18" min="14" max="70" class="form-control" required>
+            </div>
+                
+            <div class="col-12">
+            <label for="dropdown" class="form-label">DropDown</label>
+            <select name="dropdown" id="dropdown" class="form-select">
+                    <option value="List1">List 01</option>
+                    <option value="List2">List 02</option>
+                    <option value="List3">List 03</option>
+                    <option value="List4">List 04</option>
+            </select>
+            </div>
+
+            <div class="col-12">
+                <hr class="col-6">           
+                <h5>Radios:</h5>
+                <div class="my-auto">
+                    <div class="form-check">
+                    <label for="mult" class="form-check-label"><input value="op1" type="radio" name="mult" id="" class="form-check-input">First option</label>
+                    </div>
+                    <div class="form-check">
+                    <label for="mult" class="form-check-label"><input value="op2" type="radio" name="mult" id="" class="form-check-input">Seconde Option</label>
+                    </div>
+                    <div class="form-check">
+                    <label for="mult" class="form-check-label"><input value="op2" type="radio" name="mult" id="" class="form-check-input" disabled>Disable Option</label>
+                    </div>
+                </div>
+
+
+                <hr class="col-6"> 
+                <h5>Choice checkBox:</h5>
+                <div class="my-auto">   
+                    <div class="form-check">
+                    <label for="mult" class="form-check-label"><input value="op1" type="checkbox" name="mult" id="" class="form-check-input">First option</label>
+                    </div>
+                    <div class="form-check">
+                    <label for="mult" class="form-check-label"><input value="op2" type="checkbox" name="mult" id="" class="form-check-input">Seconde Option</label>
+                    </div>
+                    <div class="form-check">
+                    <label for="mult" class="form-check-label"><input value="op2" type="checkbox" name="mult" id="" class="form-check-input" disabled>Disable Option</label>
+                    </div>
+                
+            </div>
+
+            
+            <div class="form-group">
+                <label for="comments">Comments</label> 
+                <br>        
+                <textarea class="form-control" id="comments" name="comments" rows="4" cols="50" placeholder="write here..."></textarea>
+                </div>
+                <div class="text-center">
+                <button id="submit" type="submit" class="w-25 btn btn-lg btn-primary m-3" >Submit</button>
+            </div>
+            
+            <div class="mastfoot mt-auto">
+                
+            </div>
+        </form>
+ 
+    </div>
+    </div>
+    </main>
+
+    <footer class="p-5 mastfoot mt-10 text-center">
+        <div class="inner">
+            <p>Visite o repositório no <a href="https://github.com/paulpessoa" target="_blank">GitHub</a>, ou <a href="https://twitter.com/mdo" target="_blank">LinkedIn</a>.</p>
+        </div>
+    </footer>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
